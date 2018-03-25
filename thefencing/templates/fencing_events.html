@@ -1,0 +1,42 @@
+{% extends '_base.html' %}
+{% load static %}
+{% block content %}
+{% include 'fencing_category.html' %}
+                <!-- Start Blog Content -->
+                <div class="col-md-9">
+                    <div class="logn-desc">
+                        <h2 class="themeix-h2">펜싱종목</h2>
+                        <p>펜싱은 플뢰레, 에페, 사브르 3종목으로 나뉜다.</p><br>
+                        <p>에페는 전신을 찌를 수 있으며 770g 이하의 칼로 비교적 무겁다고 할 수 있다.</p>
+                        <p>플뢰레는 상체 찌르기로 팔과 머리, 다리를 제외한다. 500g 이하의 칼을 사용한다.</p>
+                        <p>사브르는 찌르기와 베기로 팔과 머리를 포함한 상체이다. 에페와 플뢰레보다 짧은 105cm 칼을 사용한다.</p>
+                        <img src="{% static 'images/fencing_events.png' %}"/>
+
+
+                    </div>
+                </div>
+                <!-- End Blog Content -->
+            </div>
+        </div>
+    </div>
+    <!-- End Blog Area -->
+    <!-- Start Call To Action Area -->
+    <div class="call-to-action-area danger-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="action-content">
+                        <h2>강남펜싱클럽</h2>
+                        <p>선릉역과 역삼역 사이 / 주차지원 / 사우나시설까지</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="purchase-link text-right">
+                        <a href="https://map.naver.com/local/siteview.nhn?code=31403329&_ts=1521893268041" class="themeix-purchase-btn" target="_blank">자세히 보기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Call To Action Area -->
+{% endblock %}

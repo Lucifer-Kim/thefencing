@@ -1,0 +1,67 @@
+{% extends '_base.html' %}
+{% load static %}
+{% block content %}
+{% include 'fencing_category.html' %}
+                <!-- Start Blog Content -->
+                <div class="col-md-9">
+                    <div class="logn-desc">
+                        <h2 class="themeix-h2">국내 펜싱클럽</h2>
+                        <div class="alert alert-dismissible alert-info">
+                            <span class="badge badge-danger">공지</span>  minjiyang95@gmail.com 로 클럽 정보 주시면 추가해드립니다:)
+                        </div>
+                        <table class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th>클럽이름</th>
+                                <th>종목</th>
+                                <th>주소</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>강남펜싱클럽</td>
+                                <td>플뢰레, 사브르</td>
+                                <td>서울특별시 강남구 언주로 337 동영문화센터 B2</td>
+                            </tr>
+                            <tr>
+                                <td>은호펜싱클럽</td>
+                                <td>플뢰레</td>
+                                <td>서울특별시 금천구 가산디지털1로 137 IT캐슬2차</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <!-- <img src="{% static 'images/fencing_events.png' %}"/> -->
+
+
+                    </div>
+                </div>
+                <!-- End Blog Content -->
+            </div>
+        </div>
+    </div>
+    <!-- End Blog Area -->
+    <!-- Start Call To Action Area -->
+    <div class="call-to-action-area danger-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="action-content">
+                        <h2>강남펜싱클럽</h2>
+                        <p>선릉역과 역삼역 사이 / 주차지원 / 사우나시설까지</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="purchase-link text-right">
+                        <a href="https://map.naver.com/local/siteview.nhn?code=31403329&_ts=1521893268041" class="themeix-purchase-btn" target="_blank">자세히 보기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Call To Action Area -->
+{% endblock %}
