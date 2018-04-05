@@ -106,7 +106,7 @@
                                                         <li><a href="{% url 'fleamarket' %}"><span><i class="fa fa-shopping-bag"></i></span>플리마켓</a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="questions.html">Competition<span>시합정보/결과</span></a>
+                                                <li><a href="#">Competition<span>시합정보/결과</span></a>
                                                     <ul class="dropdown">
                                                         <li><a href="#"> <span><i class="fa fa-calendar-plus-o"></i></span>국내시합(엘리트)</a></li>
 														<li><a href="#"><span><i class="fa  fa-calendar-plus-o"></i></span>국내시합(아마추어)</a></li>
@@ -114,7 +114,7 @@
                                                         <li><a href="#"><span><i class="fa fa-calendar-check-o"></i></span>시합결과</a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="questions.html">Ranking<span>랭킹</span></a>
+                                                <li><a href="#">Ranking<span>랭킹</span></a>
                                                     <ul class="dropdown">
                                                         <li><a href="#"><span><i class="fa fa-hand-rock-o"></i></span>클럽랭킹</a></li>
                                                         <li>
@@ -123,9 +123,9 @@
 														<li><a href="#"><span><i class="fa fa-hand-peace-o"></i></span>국내랭킹(엘리트/아마추어)</a></li>
                                                     </ul>
                                                 </li>
-												<li><a href="questions.html">Blog<span>펜싱블로그</span></a>
+												<li><a href="https://blog.naver.com/kei02085" target="_blank">Blog<span>펜싱블로그</span></a>
                                                     <ul class="dropdown">
-                                                        <li><a href="https://blog.naver.com/kei02085"><span><i class="fa fa-user"></i></span>어질현</a></li>
+                                                        <li><a href="https://blog.naver.com/kei02085" target="_blank"><span><i class="fa fa-user"></i></span>어질현</a></li>
                                                     </ul>
                                                 </li>
                                                 <li><a href="{% url 'update' %}">Updates<span>업데이트 내역/예정</span></a>
@@ -148,41 +148,38 @@
             <div class="mobile-menu">
                 <nav>
                     <ul>
-                        <li><a href="index.html">Home</a>
+                        <li><a href="{% url 'index' %}">Home</a>
+						</li>
+						<li><a href="{% url 'fencing_history' %}">Fencing</a></li>
                             <ul>
-                                <li><a href="index.html">Home Version 1</a></li>
-                                <li class="active"><a href="index-2.html">Home Version 2</a></li>
-                            </ul>						
+                                <li><a href="{% url 'fencing_history' %}">펜싱역사</a></li>
+                                <li><a href="{% url 'fencing_events' %}">펜싱 종목</a></li>
+                                <li><a href="{% url 'fencing_rules' %}">펜싱 규칙</a></li>
+                                <li><a href="{% url 'fencing_terms' %}">펜싱 용어</a></li>
+                                <li><a href="{% url 'fencing_club' %}">펜싱 클럽</a></li>
+                            </ul>
+                        <li><a href="{% url 'media_news' %}">Media</a>
+                            <ul>
+                                <li><a href="{% url 'media_news' %}">오늘의 펜싱뉴스</a></li>
+                                <li><a href="{% url 'fencing_forum' %}">펜싱포럼</a></li>
+                                <li><a href="{% url 'fencing_photo' %}">펜싱사진</a></li>
+                                <li><a href="{% url 'fencing_video' %}">펜싱동영상</a></li>
+                                <li><a href="http://fencing.sports.or.kr/" target="_blank">대한펜싱협회</a></li>
+                            </ul>
 						</li>
-						<li><a href="about-us.html">About</a></li>
-                        <li><a href="#">Questions</a>
+                        <li><a href="{% url 'free_board' %}">Square</a>
 							<ul>
-								<li><a href="questions.html"> Questions</a></li>
-								<li><a href="ask-question.html">Ask Questions</a></li>
-								<li><a href="answers.html">Answers</a></li>
-								<li><a href="login.html">Login</a></li>
-								<li><a href="register.html">Register</a></li>								
-							</ul>
-						</li>
-                        <li><a href="#">Pages</a>
-							<ul>
-							   <li><a href="index-2.html">Home 2</a></li>
-							   <li><a href="blog.html">Blog</a></li>
-							   <li><a href="blog-details.html">Blog Details</a></li>
-							   <li><a href="questions.html">Questions</a></li>
-							   <li><a href="answers.html">Answers</a></li>
-							   <li><a href="updates.html">Updates</a></li>
-							   <li><a href="contact.html">Contact</a></li>
-							   <li><a href="left-sidebar.html">Left Sidebar</a></li>
-							   <li><a href="right-sidebar.html">Right Sidebar</a></li>
-							   <li><a href="login.html">login</a></li>
-							   <li><a href="register.html">Register</a></li>
-							   <li><a href="404.html">404</a></li>							
-							</ul>
+                                <li><a href="{% url 'free_board' %}">자유게시판</a></li>
+                                <li><a href="{% url 'qna_board' %}">QnA</a></li>
+                                <li><a href="{% url 'fleamarket' %}">플리마켓</a></li>
+                            </ul>
 						</li>						
 						<li><a href="blog.html">Blog</a></li>
-						<li><a href="updates.html">Updates</a></li>
-						<li><a href="contact.html">Contact</a></li>
+                            <ul>
+                                <li><a href="https://blog.naver.com/kei02085" target="_blank">어질현</a></li>
+                            </ul>
+						<li><a href="{% url 'update' %}">Updates</a></li>
+						<li><a href="{% url 'contact' %}">Contact</a></li>
                     </ul>
                 </nav>
             </div>
