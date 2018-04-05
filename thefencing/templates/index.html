@@ -1,0 +1,137 @@
+{% extends '_base.html' %}
+{% load static %}
+{% block content %}
+    <!-- Start Slider Area -->
+    <div class="slider-area slider-opt">
+
+
+        <div id="bootstrap-touch-slider" class="carousel bs-slider slide  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000" >
+
+            <!-- Wrapper For Slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+
+                    <!-- Slide Background -->
+                    <img src="{% static 'images/thefencing_bg3.png' %}" alt="Bootstrap Touch Slider"  class="slide-image"/>
+                    <div class="bs-slider-overlay"></div>
+
+                    <div class="container">
+                        <div class="row">
+                            <!-- Slide Text Layer -->
+                            <div class="slide-text slide_style_center">
+                                <h1 data-animation="animated zoomInRight">2018 펜싱 클럽 코리아 오픈대회</h1>
+                                <p data-animation="animated fadeInLeft">2018.04.14(토)-2018.04.15(일) / 경기도 화성시 화성종합경기타운 실내체육관</p>
+                                <a href="http://bootstrapthemes.co/" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">자세히 보기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Third Slide -->
+                <div class="item">
+
+                    <!-- Slide Background -->
+                    <img src="{% static 'images/thefencing_bg3.png' %}" alt="Bootstrap Touch Slider"  class="slide-image"/>
+                    <div class="bs-slider-overlay"></div>
+
+                    <div class="container">
+                        <div class="row">
+                            <!-- Slide Text Layer -->
+                            <div class="slide-text slide_style_center">
+                                <h1 data-animation="animated zoomInRight">펜싱을 본업으로 하고 싶어서</h1>
+                                <p data-animation="animated fadeInLeft">마음을 달래고자 펜싱 커뮤니티 사이트 만들었습니다.</p>
+                                <a href="{% url 'contact' %}" class="btn btn-default" data-animation="animated fadeInLeft">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Slide -->
+
+ 
+
+
+            </div><!-- End of Wrapper For Slides -->
+
+            <!-- Left Control -->
+            <a class="left carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="prev">
+                <span class="fa fa-angle-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+
+            <!-- Right Control -->
+            <a class="right carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="next">
+                <span class="fa fa-angle-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+
+        </div> <!-- End  bootstrap-touch-slider Slider -->
+    </div>
+    <!--End Slider Area -->
+
+    <!-- Start Questions Area -->
+
+    <div class="question-area themeix-ptb">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="alert alert-warning">
+                        <strong>열심히 코딩하고 있습니다. 조금만 기다려주세요:)</strong>
+                    </div>
+                </div>
+
+                <!-- Start Blog Sidebar -->
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="blog-sidebar">
+                            <div class="col-md-12 col-sm-6">
+                                <aside id="dwqa-categories-2" class="widget widget_categories dwqa_widget dwqa_widget_categories sidebar-list">
+                                    <h2 class="widget-title">펜싱 정보</h2>
+                                    <ul>
+                                        <li><a href="https://search.naver.com/p/crd/rd?m=1&px=530&py=950&sx=530&sy=506&p=TrAPZspySElssap+YH0sssssszR-428769&q=%B0%AD%B3%B2%C6%E6%BD%CC%C5%AC%B7%B4&ssc=tab.nx.all&f=nexearch&w=nexearch&s=ASSsUvv/fGXgnt5thbuKlA==&time=1522048530714&a=loc_ipt*f.tit&r=1&i=31403329&g=mpi%3D09305555%3AqcT_%EA%B0%95%EB%82%A8%ED%8E%9C%EC%8B%B1%ED%81%B4%EB%9F%BD&u=https%3A//map.naver.com/local/siteview.nhn%3Fcode%3D31403329&cr=2" target="_blank"><img src="{% static 'images/gangnam_ad2.png' %}"></a></li>
+                                        <li><a href="#"><img src="{% static 'images/leonpaul2.png' %}"</a></li>
+                                    </ul>
+                                </aside>
+                            </div>
+                            <div class="col-md-12 col-sm-6">
+                                <aside class="widget dwqa-widget dwqa-popular-question">
+                                    <div class="sidebar-popular-post dwqa-popular-questions">
+                                        <h2 class="widget-title">공사중</h2>
+                                        <ul>
+                                            <li><a href="#">테스트</a> <span>asked by Kiki Ralp</span></li>
+                                            <li><a href="#">테스트테스트</a> <span>asked by Antawn Fiennes</span></li>
+                                            <li><a href="#">테스트테스트테스트</a> <span>asked by Kiki Ralp</span></li>
+                                            <li><a href="#">테스트테스트테스트테스트</a> <span>asked by Antawn Fiennes</span></li>
+                                            <li><a href="#">테스트테스트테스트테스트테스트</a> <span>asked by Antawn Fiennes</span></li>
+                                        </ul>
+                                    </div>
+                                </aside>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Blog Sidebar -->
+            </div>
+        </div>
+    </div>
+
+    <!-- End  Questions Area -->
+    <!-- Start Call To Action Area -->
+    <div class="call-to-action-area hover-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="action-content">
+                        <h2>사브르 서울 그랑프리</h2>
+                        <p>2018.03.30-2018.04.01</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="purchase-link text-right">
+                        <a href="login.html" class="themeix-purchase-btn-3">자세히 보기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Call To Action Area -->
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends '_base.html' %}
+{% load static %}
+{% block content %}
+{% include 'square_category.html' %}
+                <!-- Start Blog Content -->
+                <div class="col-md-9">
+                    <div class="logn-desc" style="padding-bottom:20px;">
+                        <h2 class="themeix-h2">자유게시판</h2>
+                    </div>
+                    <div class="alert alert-dismissible alert-danger">
+                            <p>로그인 기능을 아직 구현하지 않아서 한 번 글 올리시면 수정 못 하니 한 번 더 확인해주세욥! </p>
+                    </div>
+                        <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">게시글 제목</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">제목은 50자 이하!</small>
+                        </div>
+                        <div class="form-group">
+                            <label>게시글 내용</label>
+                            <textarea class="form-control"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">작성자</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput">
+                        </div>
+                        <button type="submit" class="btn btn-success btn-lg">전송</button>
+                        </form>
+
+
+                </div>
+                <!-- End Blog Content -->
+            </div>
+        </div>
+    </div>
+    <!-- End Blog Area -->
+{% endblock %}

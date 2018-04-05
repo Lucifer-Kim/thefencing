@@ -1,0 +1,58 @@
+{% extends '_base.html' %}
+{% load static %}
+{% block content %}
+{% include 'media_category.html' %}
+                <!-- Start Blog Content -->
+                <div class="col-md-9">
+                    <div class="logn-desc">
+                        <h2 class="themeix-h2">오늘의 펜싱뉴스</h2>
+                        <div class="alert alert-dismissible alert-info">
+                            <p>펜싱 뉴스 볼 수 있는 게시판입니다. 해외 피드도 볼 수 있도록 구현중입니다:)</p>
+                        </div>
+                        <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">뉴스제목</th>
+                            <th scope="col">뉴스링크</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for news_title, news_link in news_dict.items %}
+                        <tr>
+                            <td>{{ news_title }}</td>
+                            <td><a href="{{ news_link }}" target="_blank">{{ news_link }}</a></td>
+                        </tr>
+                        {% endfor %}
+                        </tbody>
+                        </table>
+
+
+
+
+                    </div>
+                </div>
+                <!-- End Blog Content -->
+            </div>
+        </div>
+    </div>
+    <!-- End Blog Area -->
+    <!-- Start Call To Action Area -->
+    <div class="call-to-action-area danger-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="action-content">
+                        <h2>강남펜싱클럽</h2>
+                        <p>선릉역과 역삼역 사이 / 주차지원 / 사우나시설까지</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="purchase-link text-right">
+                        <a href="https://map.naver.com/local/siteview.nhn?code=31403329&_ts=1521893268041" class="themeix-purchase-btn" target="_blank">자세히 보기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Call To Action Area -->
+{% endblock %}
